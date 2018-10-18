@@ -1,0 +1,34 @@
+{
+  "name": "zello-bot2",
+  "version": "0.0.1",
+  "description": "Zello Bot using the Channel API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "node dist/zellobot2.bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpesoft/zello-bot2.git"
+  },
+  "keywords": [
+    "zello",
+    "bot"
+  ],
+  "author": "Carsten Perthel <carsten@cpesoft.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpesoft/zello-bot2/issues"
+  },
+  "homepage": "https://github.com/cpesoft/zello-bot2#readme",
+  "devDependencies": {
+    "@types/clean-webpack-plugin": "^0.1.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "ts-loader": "^5.2.2",
+    "typescript": "^3.1.3",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
+}
