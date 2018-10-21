@@ -3,6 +3,7 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
+  target: 'node',
   // entry is where, say, your app starts - it can be called main.ts, index.ts, app.ts, whatever
   entry: ['./src/index.ts'],
   output: {
@@ -21,6 +22,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx', '.jsx', '.json']
+  },
+  watch: {
+      ignored: /node_modules/, 
   },
   plugins: [
       new CleanWebpackPlugin(['dist'])
